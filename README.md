@@ -75,6 +75,7 @@ class SignupForm extends yii\base\Model
     {
         return [
             // something code
+            // usage is Optional
             ['verifyCode', '\yiier\smser\validators\SmsCodeValidator', 'usage' => 'Signup'],
         ];
     }
