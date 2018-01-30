@@ -2,6 +2,11 @@ sms for Yii2
 ============
 sms for Yii2
 
+[![Latest Stable Version](https://poser.pugx.org/yiier/yii2-smser/v/stable)](https://packagist.org/packages/yiier/yii2-smser) 
+[![Total Downloads](https://poser.pugx.org/yiier/yii2-smser/downloads)](https://packagist.org/packages/yiier/yii2-smser) 
+[![Latest Unstable Version](https://poser.pugx.org/yiier/yii2-smser/v/unstable)](https://packagist.org/packages/yiier/yii2-smser) 
+[![License](https://poser.pugx.org/yiier/yii2-smser/license)](https://packagist.org/packages/yiier/yii2-smser)
+
 Installation
 ------------
 
