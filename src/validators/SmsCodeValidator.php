@@ -32,7 +32,7 @@ class SmsCodeValidator extends Validator
     {
         $phone = $model->{$this->phoneAttribute};
         $smsLog = SmsLog::find()
-            ->filterWhere(['phone' => $phone, 'usage' => $this->usage, 'status' => SmsLog::STATUS_TODO])
+            ->filterWhere(['phone' => $phone, 'code' => $model->$attribute, 'usage' => $this->usage, 'status' => SmsLog::STATUS_TODO])
             ->andWhere(['>=', 'expired_at', time()])
             ->orderBy('created_at DESC')
             ->count('id');
