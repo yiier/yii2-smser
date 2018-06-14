@@ -68,7 +68,7 @@ Validator
 
 ```php
 <?php
-class SignupForm extends yii\base\Model
+class SignupForm extends \yii\base\Model
 {
     // something code
     public $verifyCode;
@@ -95,7 +95,7 @@ send code && update code status
 Yii::$app->smser->send(18688888888, [
     'content'  => '您的验证码为: 1234',
     'template' => 'SMS_001',
-    'data' => ['code' => 1234],
+    'data' => ['code' => 1234, 'usage' => 'Signup'], // or 'data' => ['code' => 1234],
 ]);
 
 // update used status 
